@@ -5,6 +5,6 @@ COPY . .
 
 RUN pip install -r requirements.txt
 RUN python trainLexicon.py
-EXPOSE 3001
+EXPOSE 3002
 ENTRYPOINT [ "python" ]
 CMD [ "lemmatizer.py" ]

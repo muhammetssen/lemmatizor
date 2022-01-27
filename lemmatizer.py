@@ -118,7 +118,6 @@ def evaluate():
     return response
 
 if __name__ == "__main__":
-    
     try:
         with open('revisedDict.pkl', 'rb') as f:
             revisedDict = pickle.load(f)
@@ -126,4 +125,4 @@ if __name__ == "__main__":
         print("Please run trainLexicon.py to generate revisedDict.pkl file")
 
     from waitress import serve
-    serve(app,host='0.0.0.0',port=3001)
+    serve(app,host='0.0.0.0',port=3002)
