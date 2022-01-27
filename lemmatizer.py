@@ -98,9 +98,6 @@ def checkSuffixValidation(suff):
                 validList = validList+contList
     return len(validList)>0,validList
 
-if(len(sys.argv)<1):
-	print("Please provide a word as a system arguments")
-	sys.exit(0)
 
 
 
